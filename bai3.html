@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let str = "1 A ă d Đbcgh";
+    let regexpNguyenAm = /^[aăâeêioôơuưy]/i;
+    let regexpPhuAm = /^[bcdđghklmnpqrstvx]/i;
+    let countNguyenAm = 0;
+    let countPhuAm = 0;
+    for(let i = 0; i < str.length; i++){
+        if(regexpNguyenAm.test(str[i])){
+            countNguyenAm+=1;
+        }
+        if(regexpPhuAm.test(str[i])){
+            countPhuAm+=1;
+        }
+    }
+    console.log('chuoi co '+countPhuAm+' phu am');
+    console.log('chuoi co '+countNguyenAm+ ' nguyen am');
+</script>
+</body>
+</html>

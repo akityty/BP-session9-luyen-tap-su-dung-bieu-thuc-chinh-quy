@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function isDayMonthYear(str) {
+        var regexp = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/;
+        return  regexp.test(str);
+    }
+    let str = prompt("Nhap ngay thang nam sinh");
+    console.log(isDayMonthYear(str));
+</script>
+</body>
+</html>

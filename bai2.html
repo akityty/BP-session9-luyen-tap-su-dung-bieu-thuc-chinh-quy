@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let regexp = /^[A-Za-z]/;
+    let count = 0;
+    let str = "a3=vf Saaa'pAB";
+   for(let i =0; i< str.length;i++){
+       if(regexp.test(str[i])){
+           count +=1;
+       }
+   }
+   console.log(count);
+</script>
+</body>
+</html>
